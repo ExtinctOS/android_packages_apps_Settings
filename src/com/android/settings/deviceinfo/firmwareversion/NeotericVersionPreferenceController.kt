@@ -19,11 +19,11 @@ class NeotericVersionPreferenceController(
 
     override fun getSummary(): CharSequence =
         SystemProperties.get(
-            NEOTERIC_VERSION_PROP,
+            EXTINCT_VERSION_PROP,
             mContext.getString(R.string.device_info_default)
         )
 
     companion object {
-        private const val NEOTERIC_VERSION_PROP = "ro.neoteric.version"
+        private const val EXTINCT_VERSION_PROP = "ro.extinct.version"
     }
 }
